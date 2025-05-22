@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fefefe;
+      background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
       color: #222;
       text-align: center;
       padding: 50px 20px;
@@ -20,7 +20,7 @@
     }
     h2 {
       font-weight: normal;
-      color: #666;
+      color: #444;
     }
     p {
       max-width: 600px;
@@ -29,8 +29,8 @@
     }
     footer {
       margin-top: 3em;
-      font-size: 0.9em;
-      color: #aaa;
+      font-size: 0.95em;
+      color: #555;
     }
     nav {
       margin-bottom: 30px;
@@ -48,6 +48,13 @@
     nav a:hover {
       background-color: #1d4478;
     }
+    a.email-link {
+      color: #2a5d9f;
+      text-decoration: none;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -59,10 +66,12 @@
   <h1>Maxim Novak</h1>
   <h2>Instrumental Composer for Film and Media</h2>
   <p>Welcome to my personal website. I create melodic, nostalgic instrumental music for filmmakers, content creators, and storytellers.</p>
-  <p>Selected works are available on <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a>.</p>
+  <p>Selected works are available on 
+    <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a>.
+  </p>
 
   <footer>
-    Contact: ambertunes@gmail.com
+    Contact: <a class="email-link" href="mailto:ambertunes@gmail.com">ambertunes@gmail.com</a>
   </footer>
 </body>
 </html>
