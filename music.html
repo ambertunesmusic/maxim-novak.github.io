@@ -9,22 +9,33 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fefefe;
-      color: #222;
+      background-image: url('sunset_street_background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 40px 20px;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
+      border-radius: 10px;
+      width: 100%;
     }
     h1 {
       text-align: center;
       font-size: 2.2em;
+      color: #fff;
     }
     h2 {
       margin-top: 2em;
       font-size: 1.4em;
-      color: #2a5d9f;
+      color: #cbdfff;
     }
     p {
       max-width: 700px;
@@ -37,7 +48,7 @@
       margin-bottom: 0.4em;
     }
     a {
-      color: #2a5d9f;
+      color: #cbdfff;
       text-decoration: none;
     }
     a:hover {
@@ -49,7 +60,15 @@
     }
     nav a {
       margin: 0 10px;
+      padding: 10px 20px;
+      background-color: rgba(42, 93, 159, 0.9);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
       font-size: 1em;
+    }
+    nav a:hover {
+      background-color: rgba(29, 68, 120, 0.9);
     }
     .cover {
       width: 100%;
@@ -57,7 +76,7 @@
       display: block;
       margin: 1em auto;
       border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -68,40 +87,42 @@
     <a href="music.html">Music</a>
   </nav>
 
-  <h1>Selected Works</h1>
+  <div class="content">
+    <h1>Selected Works</h1>
 
-  <h2>Dreamscapes</h2>
-  <img src="dreamscapes_cover.png" alt="Dreamscapes Cover" class="cover"/>
-  <p>This collection blends cinematic nostalgia with mellow instrumental moods — perfect for emotional storytelling, quiet scenes, or reflective visuals.</p>
-  <ul>
-    <li>Blue Breeze</li>
-    <li>Lullaby for the Stars</li>
-    <li>City Lights Waltz</li>
-    <li>Colorful Evening</li>
-    <li>Sunrise Boulevard</li>
-  </ul>
-  <p><a href="https://freemusicarchive.org/music/maxim-novak/dreamscapes-ep/" target="_blank">Listen on Free Music Archive</a></p>
+    <h2>Dreamscapes</h2>
+    <img src="dreamscapes_cover.png" alt="Dreamscapes Cover" class="cover"/>
+    <p>This collection blends cinematic nostalgia with mellow instrumental moods — perfect for emotional storytelling, quiet scenes, or reflective visuals.</p>
+    <ul>
+      <li>Blue Breeze</li>
+      <li>Lullaby for the Stars</li>
+      <li>City Lights Waltz</li>
+      <li>Colorful Evening</li>
+      <li>Sunrise Boulevard</li>
+    </ul>
+    <p><a href="https://freemusicarchive.org/music/maxim-novak/dreamscapes-ep/" target="_blank">Listen on Free Music Archive</a></p>
 
-  <h2>Best of 2024: Listeners' Choice</h2>
-  <img src="best_of_2024_cover.jpg" alt="Best of 2024 Cover" class="cover"/>
-  <p>This collection features listener favorites selected from several albums released in 2024.</p>
-  <ul>
-    <li>1. A Mosaic of Moments</li>
-    <li>2. City Lights Waltz</li>
-    <li>3. Cafe Rio</li>
-    <li>4. Aura of Autumn</li>
-    <li>5. Sunrise Boulevard</li>
-    <li>6. Breeze of Love</li>
-    <li>7. Hidden Alleyways</li>
-    <li>8. Colorful Evening</li>
-    <li>9. Lunar Rush</li>
-    <li>10. Moonlit Crosswalk</li>
-    <li>11. Loneliness in the City</li>
-    <li>12. Shadows Gone Wild</li>
-    <li>13. Remembered Times</li>
-    <li>14. Sunset Samba</li>
-    <li>15. Tide of Love</li>
-  </ul>
-  <p><a href="https://freemusicarchive.org/music/maxim-novak/best-of-2024-listeners-choice" target="_blank">Listen on Free Music Archive</a></p>
+    <h2>Best of 2024: Listeners' Choice</h2>
+    <img src="best_of_2024_cover.jpg" alt="Best of 2024 Cover" class="cover"/>
+    <p>This collection features listener favorites selected from several albums released in 2024.</p>
+    <ul>
+      <li>1. A Mosaic of Moments</li>
+      <li>2. City Lights Waltz</li>
+      <li>3. Cafe Rio</li>
+      <li>4. Aura of Autumn</li>
+      <li>5. Sunrise Boulevard</li>
+      <li>6. Breeze of Love</li>
+      <li>7. Hidden Alleyways</li>
+      <li>8. Colorful Evening</li>
+      <li>9. Lunar Rush</li>
+      <li>10. Moonlit Crosswalk</li>
+      <li>11. Loneliness in the City</li>
+      <li>12. Shadows Gone Wild</li>
+      <li>13. Remembered Times</li>
+      <li>14. Sunset Samba</li>
+      <li>15. Tide of Love</li>
+    </ul>
+    <p><a href="https://freemusicarchive.org/music/maxim-novak/best-of-2024-listeners-choice" target="_blank">Listen on Free Music Archive</a></p>
+  </div>
 </body>
 </html>
