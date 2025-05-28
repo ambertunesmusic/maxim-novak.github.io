@@ -7,10 +7,60 @@
   <title>Contact — Maxim Novak</title>
   <meta name="description" content="Get in touch with composer Maxim Novak for collaborations, licensing, and more.">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .contact-info {
+      flex: 1;
+    }
+    .contact-info h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 0.8rem;
+    }
+    .contact-info a {
+      color: #d4af37;
+      text-decoration: underline;
+    }
+    .photo-placeholder {
+      max-width: 300px;
+      border: 2px solid #d4af37;
+      padding: 0.5rem;
+      text-align: center;
+      font-style: italic;
+      color: #999;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
-<body style="background-color:black; color:white; font-family:sans-serif; padding:2rem;">
-  <h1>Contact</h1>
-  <p>You can reach me at <a href="mailto:ambertunes@gmail.com" style="color:#ccc;">ambertunes@gmail.com</a></p>
-  <p>Free Music Archive: <a href="https://freemusicarchive.org/music/maxim-novak/" style="color:#ccc;">FMA Profile</a></p>
+<body>
+  <div class="container">
+    <div class="contact-info">
+      <h1>Contact</h1>
+      <p>You can reach me directly at <a href="mailto:ambertunes@gmail.com">ambertunes@gmail.com</a></p>
+      <p>Listen to my full collection on <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a></p>
+      <p>Follow me on <a href="https://www.facebook.com/ambertunes" target="_blank">Facebook</a></p>
+    </div>
+    <div class="photo-placeholder">
+      (A personal photo will appear here soon.)<br>
+      <span style="display:block; margin-top:0.5rem; color:#aaa;">Let’s work together.</span>
+    </div>
+  </div>
 </body>
 </html>
