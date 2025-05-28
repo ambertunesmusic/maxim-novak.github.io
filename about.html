@@ -7,9 +7,59 @@
   <title>About — Maxim Novak</title>
   <meta name="description" content="Learn more about composer Maxim Novak and his retro-inspired instrumental music.">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      border: 2px solid #d4af37;
+      padding: 2rem;
+      position: relative;
+    }
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #d4af37;
+    }
+    .container::before {
+      top: -6px;
+      left: -6px;
+      border-right: none;
+      border-bottom: none;
+    }
+    .container::after {
+      bottom: -6px;
+      right: -6px;
+      border-left: none;
+      border-top: none;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ddd;
+    }
+    a {
+      color: #d4af37;
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body style="background-color:black; color:white; font-family:sans-serif; padding:2rem;">
-  <h1>About</h1>
-  <p>Maxim Novak is a composer of instrumental music with a nostalgic, cinematic flair — blending elements of jazz, bossa nova, and retro soundscapes for visual media and storytelling.</p>
+<body>
+  <div class="container">
+    <h1>About</h1>
+    <p><strong>Maxim Novak</strong> is a composer of instrumental music with a nostalgic, cinematic touch — blending elements of jazz, bossa nova, retro, and folk traditions. His melodies have been featured in multiple documentary films, hundreds of YouTube videos, and artistic collaborations with creators around the world. His music is available on platforms like <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a> and Spotify. In 2024, the Free Music Archive published a <a href="https://freemusicarchive.org/member/fma-team/meet-maxim-novak-mix/" target="_blank">dedicated article</a> highlighting his unique emotional and melodic style. He is also listed on <a href="https://www.imdb.com/name/nm17047519/?ref_=ttfc_fcr_cr" target="_blank">IMDb</a> for his contributions to film scoring.</p>
+  </div>
 </body>
 </html>
