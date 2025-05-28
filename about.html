@@ -15,51 +15,77 @@
       padding: 2rem;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .photo-placeholder {
+      max-width: 300px;
       border: 2px solid #d4af37;
-      padding: 2rem;
-      position: relative;
+      padding: 0.5rem;
+      text-align: center;
+      font-style: italic;
+      color: #999;
     }
-    .container::before,
-    .container::after {
-      content: "";
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border: 2px solid #d4af37;
+    .photo-caption {
+      margin-top: 0.5rem;
+      color: #aaa;
+      text-align: center;
     }
-    .container::before {
-      top: -6px;
-      left: -6px;
-      border-right: none;
-      border-bottom: none;
-    }
-    .container::after {
-      bottom: -6px;
-      right: -6px;
-      border-left: none;
-      border-top: none;
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ddd;
     }
     h1 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: #ddd;
-    }
     a {
       color: #d4af37;
       text-decoration: underline;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .buttons a {
+      border: 1px solid #d4af37;
+      padding: 0.75rem 2rem;
+      color: #d4af37;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 0.375rem;
+      transition: all 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #d4af37;
+      color: black;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>About</h1>
-    <p><strong>Maxim Novak</strong> is a composer of instrumental music with a nostalgic, cinematic touch — blending elements of jazz, bossa nova, retro, and folk traditions. His melodies have been featured in multiple documentary films, hundreds of YouTube and TikTok videos, and artistic collaborations with creators around the world. His music is available on platforms like <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a> and Spotify. In 2024, the Free Music Archive published a <a href="https://freemusicarchive.org/member/fma-team/meet-maxim-novak-mix/" target="_blank">dedicated article</a> highlighting his unique emotional and melodic style. He is also listed on <a href="https://www.imdb.com/name/nm17047519/?ref_=ttfc_fcr_cr" target="_blank">IMDb</a> for his contributions to film scoring.</p>
+    <div class="about-content">
+      <div class="photo-placeholder">
+        (A portrait photo will appear here soon.)
+        <div class="photo-caption">Maxim Novak, composer</div>
+      </div>
+      <div class="about-text">
+        <p><strong>Maxim Novak</strong> is a composer of instrumental music with a nostalgic, cinematic touch — blending elements of jazz, bossa nova, retro, and folk traditions. His melodies have been featured in multiple documentary films, hundreds of YouTube and TikTok videos, and artistic collaborations with creators around the world. His music is available on platforms like <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a> and Spotify. In 2024, the Free Music Archive published a dedicated article highlighting his unique emotional and melodic style. He is also listed on <a href="https://www.imdb.com/name/nm17047519/?ref_=ttfc_fcr_cr" target="_blank">IMDb</a> for his contributions to film scoring.</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="/music">Music</a>
+      <a href="/contact">Contact</a>
+      <a href="/index">Home</a>
+    </div>
   </div>
 </body>
 </html>
