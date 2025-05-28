@@ -5,18 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Music — Maxim Novak</title>
-  <meta name="description" content="Listen to curated instrumental collections by composer Maxim Novak.">
+  <meta name="description" content="Curated instrumental collections by composer Maxim Novak.">
   <link rel="icon" type="image/png" href="/favicon.png">
   <style>
     body {
       background-color: black;
       color: white;
       font-family: sans-serif;
+      margin: 0;
       padding: 2rem;
     }
     h1 {
-      font-size: 2.5rem;
       text-align: center;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
     .deco-line {
@@ -25,11 +26,30 @@
       background: linear-gradient(to right, transparent, #d4af37, transparent);
       margin: 1rem auto 3rem;
     }
+    .collection {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+    .collection img {
+      width: 100%;
+      max-width: 900px;
+      border: 2px solid #d4af37;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    .collection h2 {
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .collection p {
+      font-size: 1rem;
+      color: #ccc;
+    }
     .buttons {
       display: flex;
       gap: 1rem;
       justify-content: center;
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
     .buttons a {
       border: 1px solid #d4af37;
@@ -50,7 +70,35 @@
   <h1>Music</h1>
   <div class="deco-line"></div>
 
-  <!-- Сюда пользователь вставит музыкальные подборки -->
+  <div class="collection">
+    <img src="/images/urban-romance.jpg" alt="Urban Romance">
+    <h2>Urban Romance: Echoes of the City</h2>
+    <p>A gentle blend of jazz, night moods, and cinematic storytelling.</p>
+  </div>
+
+  <div class="collection">
+    <img src="/images/sunset-nova.jpg" alt="Sunset Nova">
+    <h2>Sunset Nova: Stories Told in Samba and Light</h2>
+    <p>Soft bossa nova instrumentals for unwinding and dreaming.</p>
+  </div>
+
+  <div class="collection">
+    <img src="/images/nature-notes.jpg" alt="Nature Notes">
+    <h2>Nature Notes: Songs from the Meadow</h2>
+    <p>Pastoral melodies with a folk touch and a sense of peace.</p>
+  </div>
+
+  <div class="collection">
+    <img src="/images/folk-stories.jpg" alt="Folk Stories">
+    <h2>Folk Stories: Whispered on the Wind</h2>
+    <p>Acoustic tales rooted in tradition, carried by emotion.</p>
+  </div>
+
+  <div class="collection">
+    <img src="/images/night-letters.jpg" alt="Night Letters">
+    <h2>Night Letters: Letters Never Sent</h2>
+    <p>Melancholic reflections and slow-burning nostalgia.</p>
+  </div>
 
   <div class="buttons">
     <a href="/about">About</a>
