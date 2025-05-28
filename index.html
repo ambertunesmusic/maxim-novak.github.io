@@ -78,11 +78,59 @@
       p { font-size: 1.5rem; }
       .buttons { flex-direction: row; }
     }
-  </style>
+  
+.decor-frame {
+  border: 2px solid #d4af37; /* золотистый */
+  padding: 1rem 2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.decor-frame::before,
+.decor-frame::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #d4af37;
+}
+.decor-frame::before {
+  top: -6px;
+  left: -6px;
+  border-right: none;
+  border-bottom: none;
+}
+.decor-frame::after {
+  bottom: -6px;
+  right: -6px;
+  border-left: none;
+  border-top: none;
+}
+.deco-line {
+  height: 2px;
+  width: 160px;
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+  margin: 1rem auto;
+}
+.buttons a {
+  border-color: #d4af37;
+}
+.buttons a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+</style>
 </head>
 <body>
   <section>
+    
+  <div class="decor-frame">
+    <div class="deco-line gold"></div>
     <h1>Music that Speaks Without Words</h1>
+    <div class="deco-line gold"></div>
+  </div>
+  
     <p>Original retro-flavored instrumentals for filmmakers, creators, and storytellers.</p>
     <div class="buttons">
       <a href="/music">Music</a>
