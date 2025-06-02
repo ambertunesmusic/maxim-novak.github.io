@@ -70,8 +70,14 @@
   background: #d4af37;
   color: black;
 }
-</style>
 
+.deco-line {
+  height: 2px;
+  width: 180px;
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+  margin: 1rem auto 3rem;
+}
+</style>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4R5MGM2N5M"></script>
 <script>
@@ -82,13 +88,19 @@
 </script>
 </head>
 <body>
-<div class="container">
-<div class="contact-info">
-<h1>Contact</h1><div class="buttons">
+<div style="text-align: center; margin-top: 3rem;">
+<h1>Contact</h1>
+<div class="deco-line"></div>
+<div class="buttons" style="display: flex; justify-content: center; gap: 1.25rem; margin: 2rem auto;">
 <a href="/music">Music</a>
 <a href="/about">About</a>
 <a href="/index">Home</a>
 </div>
+</div>
+
+<div class="container">
+<div class="contact-info">
+
 <p>You can reach me directly at <a href="mailto:ambertunes@gmail.com">ambertunes@gmail.com</a></p>
 <p>Listen to my full collection on <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a></p>
 <p>Follow me on <a href="https://www.facebook.com/ambertunes" target="_blank">Facebook</a></p>
