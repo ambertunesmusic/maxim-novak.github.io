@@ -77,6 +77,51 @@
   background: linear-gradient(to right, transparent, #d4af37, transparent);
   margin: 1rem auto 3rem;
 }
+
+.photo-frame {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  margin: 2rem auto 4rem;
+  border: 2px solid #d4af37;
+  background-color: black;
+}
+
+.photo-frame img {
+  max-width: 300px;
+  display: block;
+}
+
+.photo-caption {
+  text-align: center;
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.photo-frame::before,
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #d4af37;
+}
+
+.photo-frame::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.photo-frame::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4R5MGM2N5M"></script>
@@ -105,9 +150,11 @@
 <p>Listen to my full collection on <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a></p>
 <p>Follow me on <a href="https://www.facebook.com/ambertunes" target="_blank">Facebook</a></p>
 </div>
-<div class="photo-placeholder">
-      (A personal photo will appear here soon.)<br/>
-<span style="display:block; margin-top:0.5rem; color:#aaa;">Let’s work together.</span>
+
+<div class="photo-frame">
+  <img src="/maxim-full-cropped.jpg" alt="Maxim Novak full portrait" />
+  <div class="photo-caption">Let’s work together.</div>
 </div>
+
 </div></body>
 </html>
